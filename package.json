@@ -15,10 +15,14 @@
     "webpack": "^4.43.0"
   },
   "scripts": {
-    "postinstall": "webpack",
-    "webpack": "webpack --watch --mode=development"
+    "webpack": "webpack --watch --mode=development",
+    "postinstall": "webpack"
   },
   "devDependencies": {
     "webpack-cli": "^3.3.11"
+  },
+  "engines": {
+    "node": "10.13.0",
+    "npm": "6.4.1"
   }
 }
