@@ -7,8 +7,8 @@ import SessionForm from './session_form';
 const mSTP = ({ errors }) => {
     return {
         errors: errors.session,
-        formType: 'signup',
-        navLink: <Link to="signup">How about logging in?</Link>
+        formType: 'register',
+        navLink: <Link to="signup">How about signing in?</Link>
     };
 };
 
