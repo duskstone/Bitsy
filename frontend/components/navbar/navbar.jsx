@@ -1,12 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Greeting = ({ currentUser, logout }) => {
+const NavBar = ({ currentUser, logout }) => {
     const sessionLinks = () => (
         <nav className="login-signup">
-            <Link to="/login">Login</Link>
-            &nbsp;or&nbsp;
-            <Link to="/signup">Sign up!</Link>
+            <Link to="/login">Sign in</Link>
         </nav>
     );
     const personalGreeting = () => (
@@ -19,4 +17,4 @@ const Greeting = ({ currentUser, logout }) => {
     return currentUser ? personalGreeting() : sessionLinks();
 };   
 
-export default Greeting;
+export default NavBar;
