@@ -1,0 +1,36 @@
+.everyday-finds-section {
+    background-color: #DDEBE3;
+}
+
+.everyday-finds-header {
+    font-family: "Guardian-EgypTT", serif;
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 300;
+}
+
+.everyday-finds-mid {
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+}
+
+.everyday-finds-tabs {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.everyday-finds-tabs > li {
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.mid-banner-items {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}

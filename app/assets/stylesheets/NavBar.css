@@ -4,6 +4,9 @@
 }
 
 .search-bar {
-    width: 50%;
+    background-color: rgb(241, 239, 239);
+    border-color: lightgray;
+    border-radius: 10px;
+    width: 300%;
     height: 50%;
 }

@@ -1,0 +1,10 @@
+.pop-header{
+    display: flex;
+    justify-content: center;
+}
+
+.pop-item-lists{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}

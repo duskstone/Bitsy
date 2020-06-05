@@ -1,0 +1,9 @@
+/* .catergories { */
+
+
+.catergory-tabs {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    flex-direction: row;
+}

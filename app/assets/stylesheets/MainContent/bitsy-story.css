@@ -1,0 +1,36 @@
+.story-section{
+    background-color: rgb(243, 189, 89);
+}
+
+.story-header{
+    display: flex;
+    justify-content: center;
+}
+
+.story-link{
+    display: flex;
+    justify-content: center;
+}
+
+.three-quirps{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.help-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.help-center-button{
+    display: block;
+    border-style: solid;
+    border-radius: 25px;
+}
+
+.help-center-button > h4 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
