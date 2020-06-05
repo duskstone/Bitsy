@@ -7,15 +7,15 @@ class Catergories extends React.Component{
         return (
             <div>
                 <ul className="catergory-tabs">
-                    <Link className="link-tabs">Everyday Finds</Link>
-                    <Link className="link-tabs">Jewlery & Accessories</Link>
-                    <Link className="link-tabs">Clothing & Shoes</Link>
-                    <Link className="link-tabs">Home & Living</Link>
-                    <Link className="link-tabs">Wedding & Party</Link>
-                    <Link className="link-tabs">Toys & Entertainment</Link>
-                    <Link className="link-tabs">Art & Collectibles</Link>
-                    <Link className="link-tabs">Craft SuppLinkes</Link>
-                    <Link className="link-tabs">Gifts</Link>
+                    <Link to="./" className="link-tabs">Everyday Finds</Link>
+                    <Link to="./" className="link-tabs">Jewlery & Accessories</Link>
+                    <Link to="./" className="link-tabs">Clothing & Shoes</Link>
+                    <Link to="./" className="link-tabs">Home & Living</Link>
+                    <Link to="./" className="link-tabs">Wedding & Party</Link>
+                    <Link to="./" className="link-tabs">Toys & Entertainment</Link>
+                    <Link to="./" className="link-tabs">Art & Collectibles</Link>
+                    <Link to="./" className="link-tabs">Craft SuppLinkes</Link>
+                    <Link to="./" className="link-tabs">Gifts</Link>
                 </ul>
             </div>
         )
