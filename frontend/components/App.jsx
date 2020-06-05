@@ -8,9 +8,12 @@ import SearchBarContainer from "./searchbar/searchbar";
 import Catergories from "./catergories/catergories";
 import MainContentContainer from "./maincontent/main-content";
 import FooterContent from "./footercontent/footer-content";
-
+import { Link } from 'react-router-dom';
 const App = () => (
     <div>
+        <div className="event-header">
+            <Link to="event=shop">Discover handcrafted and vintage pixel creations from GameDev-owned shops on Bitsy</Link>
+        </div>
         <header className="main-app-header">
             <h1 className="header-logo">Bitsy :3</h1>
             <SearchBarContainer />

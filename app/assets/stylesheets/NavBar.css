@@ -1,12 +1,41 @@
+.event-header{
+    display: flex;
+    justify-content: center;
+    color: ghostwhite;
+    text-decoration: none;
+    background-color: rgb(60, 3, 100);
+    height: 50px;
+    align-items: center;
+}
+
+.event-header > a{
+    color: ghostwhite;
+}
+
 .main-app-header { 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.header-logo{
+    margin-right: 60px
+}
+
+.search-bar-div{
+    padding-right: 600px;
+    padding-top: 10px;
 }
 
 .search-bar {
     background-color: rgb(241, 239, 239);
     border-color: lightgray;
-    border-radius: 10px;
+    border-radius: 25px;
     width: 300%;
-    height: 50%;
+    height: 70%;
+    padding-right: 100px;
+}
+
+.login-signup{
+    margin-left: 70px;
+    margin-top: 28px
 }
