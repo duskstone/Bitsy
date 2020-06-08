@@ -22,7 +22,8 @@ class SessionForm extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         const user = Object.assign({}, this.state);
-        this.props.processForm(user);
+        this.props.processForm(user)
+            .then( () => dispatch(this.props.closeModal()))
     }
 
     // handleClick(f) {
@@ -50,7 +51,7 @@ class SessionForm extends React.Component {
     }
 
     render() {
-        return (
+        const signInModal = () => (
             <div className="login-form-container">
                 <form onSubmit={this.handleSubmit} className="login-form-box">
                    <div className="login-form-header">
@@ -106,6 +107,12 @@ class SessionForm extends React.Component {
                 </form>
             </div>
         );
+
+        const registerModal = () => (
+            <h1>I work </h1>
+        );
+
+        return this.props.formType === 'sign in' ? signInModal() : registerModal(); 
     }
 }
 

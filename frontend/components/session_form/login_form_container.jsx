@@ -21,7 +21,8 @@ const mDTP = dispatch => {
                 Register
             </button>
         ),
-        closeModal: () => dispatch(closeModal())
+        openModal: modal => dispatch(openModal(modal)),
+        closeModal: () => dispatch(closeModal()),
     };
 };
 

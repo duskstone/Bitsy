@@ -7,8 +7,8 @@ class MainContent extends React.Component {
     render(){
        return ( <div className="main-content">
             <EverydayFinds />
-            <Products />
-            <BitsyStory />
+            {/* <Products /> */}
+            {/* <BitsyStory /> */}
         </div> )
     }
 }

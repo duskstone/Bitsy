@@ -22,7 +22,9 @@ const mDTP = dispatch => {
             <button onClick={() => dispatch(openModal('login'))}>
                 Sign in
             </button>
-        )};
+        ),
+        openModal: modal => dispatch(openModal(modal)),
+    };
 };
 
 export default connect(mSTP, mDTP)(SessionForm);

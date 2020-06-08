@@ -1,36 +1,111 @@
-.everyday-finds-section {
+/* .everyday-finds-section {
     background-color: #DDEBE3;
 }
+*/
 
-.everyday-finds-header {
+.ef-header-div {
     font-family: "Guardian-EgypTT", serif;
     display: flex;
     justify-content: center;
     font-size: 32px;
     line-height: 36px;
-    font-weight: 300;
-}
-
-.everyday-finds-mid {
+    /* font-weight: 300; */
     display: flex;
     justify-content: center;
-    font-weight: 900;
+    align-items: center;
+    width: 1220px;
+    height: 80px;
 }
 
-.everyday-finds-tabs {
+.ef-header-title{
+    margin-left: 120px;
+}
+
+.ef-2box-div{
     display: flex;
-    list-style: none;
-    justify-content: space-between;
+    flex-direction: row;
+    width: 1400px;
 }
 
-.everyday-finds-tabs > li {
-    padding: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-.mid-banner-items {
-    list-style: none;
+.ef-box1{
     display: flex;
+    flex-direction: row;
+    border-radius: 2px;
+    margin-left: 48px;
+}
+
+.ef-box1-child-1{
+    background-color: black;
+    color: white;
+    width: 250px;
+    height: 322px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ef-box1-sent{
+    font-size: 30px;
+}
+
+.ef-box1-sent2{
+    margin-top: 25px;
+    font-weight: 500;
+}
+
+.mountain-sunset{
+    width: 600px;
+    height: 322px;
+}
+
+.ef-box2{
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    height: 322px;
+    margin-left: 20px;
+}
+
+.ef-box2-child-1{
+    display: flex;
+    flex-direction: row;
+}
+
+.ef-box2-gchild-1{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(243, 202, 188);
+    height: 220px;
+    width: 216px;
+}
+
+.ef-box2-sent-topline{
+    margin-top: 20px;
+}
+
+.ef-box2-sent{
+    margin-left: 20px;
+    font-size: 25px;
+    color: darkblue;
+}
+
+.ef-box2-sent-lastline{
+    margin-left: 20px;
+    margin-top: 20px;
+    color: darkblue;
+}
+
+.dratini{
+    width: 216px;
+    height: 220px;
+}
+
+.ef-box2-child-2{
+    width: 100%;
+    height: 80px;
+    border-style: none;
+    background-color: black;
+    color: white;
+    outline-style: none;
 }

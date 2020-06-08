@@ -4,37 +4,45 @@ class EverydayFinds extends React.Component {
     render(){
         return (
             <div>
-                <div className="everyday-finds-section">
-                    <h1 className="everyday-finds-header">Find things you'll love. Support independent sellers. Only on Bitsy</h1>
-                    <div className="everyday-finds-mid">
-                        <h3>Everyday finds</h3>
-                    </div>
-                    
-                    <ul className='everyday-finds-tabs'>
-                        <li>Face Masks</li>
-                        <li>Self Care</li>
-                        <li>Home Decor</li>
-                        <li>Gift Ideas</li>
-                        <li>DIY crafts</li>
-                        <li>Outdoor & Garden</li>
-                    </ul>
+                <div className="ef-header-div">
+                    <h1 className="ef-header-title">Find things you'll love. Support independent sellers. Only on Bitsy.</h1>
                 </div>
-                
-                <div className='mid-banner'>
-                    <ul className="mid-banner-items">
-                        <li>                            
-                            <h4>Unique Everything</h4>
-                            <p>We have millions of one-of-a-kind items, so you can find whatever you need (or really, really want)</p>
-                        </li>
-                        <li>
-                            <h4>Indpendent Sellers</h4>
-                            <p>Buy directly from someone who put their heart and soul into making something special.</p>
-                        </li>
-                        <li>
-                            <h4>Secure Shopping</h4>
-                            <p>We use best-in-class technology to protect your transactions.)</p>
-                        </li>
-                    </ul>
+                <div className="ef-2box-div">
+                    <div className="ef-box1">
+                        <div className="ef-box1-child-1">
+                            <span>
+                                <h1 className="ef-box1-sent">Send some</h1>
+                            </span>
+                                <h1 className="ef-box1-sent">pixel love</h1>
+                                <h1 className="ef-box1-sent">from any</h1>
+                                <h1 className="ef-box1-sent">distance.</h1>
+                            <span>
+                                <h2 className="ef-box1-sent2">Shop prints  ></h2>
+                            </span>
+                        </div>
+                        <div className="ef-box1-child-2">
+                            <img className="mountain-sunset" src={window.mountainSunset} alt="bkg-box1" />
+                        </div>
+                    </div>
+                    <div className="ef-box2">
+                        <div className="ef-box2-child-1">
+                            <div className="ef-box2-gchild-1">
+                                <h2 className="ef-box2-sent ef-box2-sent-topline">Art inspired</h2>
+                                <h2 className="ef-box2-sent">by your</h2>
+                                <h2 className="ef-box2-sent">favorite</h2>
+                                <h2 className="ef-box2-sent">classics.</h2>
+                                <span>
+                                    <h3 className="ef-box2-sent-lastline">Check em out ></h3>
+                                </span>
+                            </div>
+                            <div className="ef-box2-gchild-2">
+                                <img className="dratini" src={window.dratini} alt="bkg-box1-child2" />
+                            </div>
+                        </div>
+                        <div>
+                            <button className="ef-box2-child-2">Ready to unlock some original concept art and more  ></button>
+                        </div>
+                    </div>
                 </div>
             </div>
         )

@@ -29,7 +29,7 @@ const App = () => (
             <MainContentContainer />
         </div>
         <div>
-            <FooterContent />
+            {/* <FooterContent /> */}
         </div>
         
         {/* <AuthRoute path="/login" component={LoginFormContainer} />
