@@ -6,7 +6,7 @@ class SessionForm extends React.Component {
         super(props)
         this.state = {
             email: "",
-            password: ""
+            password: "",
         };
         this.handleSubmit = this.handleSubmit.bind(this);
         // this.handleClick = this.handleClick.bind(this);
@@ -22,8 +22,8 @@ class SessionForm extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         const user = Object.assign({}, this.state);
-        this.props.processForm(user)
-            .then( () => dispatch(this.props.closeModal()))
+        this.props.processForm(user).then(this.props.closeModal);
+            // .then( () => dispatch(this.props.closeModal()))
     }
 
     // handleClick(f) {
@@ -33,10 +33,12 @@ class SessionForm extends React.Component {
     // }
 
     loginDemoUser() {
-        this.setState({
+        const demoUser = this.setState({
             email: "jon@gmail.com",
             password: "123456"
         })
+
+        this.handleSubmit(demoUser)
     }
     renderErrors(){
         return(
@@ -56,7 +58,7 @@ class SessionForm extends React.Component {
                 <form onSubmit={this.handleSubmit} className="login-form-box">
                    <div className="login-form-header">
                        <h1 className="sign-in-header">Sign in</h1>
-                        <button type="button" className="register-button">Register</button>
+                        <button type="button" className="register-button" onClick={ () => this.props.openModal('signup')}>Register</button>
                    </div> 
                    
           <br />
