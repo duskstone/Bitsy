@@ -18,7 +18,7 @@
 }
 
 .ef-header-title{
-    margin-left: 120px;
+    margin-left: 140px;
 }
 
 .ef-2box-div{
@@ -108,4 +108,54 @@
     background-color: black;
     color: white;
     outline-style: none;
+}
+
+.three-quirp-div{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+.three-quirp-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     margin-top: 70px;
+}
+
+.three-quirp-child1{
+    margin-left: 50px;
+}
+
+.three-quirp-child-top-pair{
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+}
+
+.three-quirp-child-title{
+    margin-top: 5px;
+    margin-left: 8px;
+    font-weight: 700;
+}
+
+.check-mark{
+    width: 24px;
+}
+
+/* .check-mark-icon > svg{
+    fill: red;
+} */
+.three-quirp-child-bottom-pair{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.three-quirp-child-last-line{
+    margin-top: 8px;
+}
+
+.three-quirp-child3{
+    margin-right: 55px;
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { searchIcon } from "../../../app/assets/images//icons"
+import { searchIcon } from "../../../app/assets/images/icons"
 
 class SearchBar extends React.Component {
     render(){
