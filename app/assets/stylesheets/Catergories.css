@@ -6,13 +6,21 @@
     list-style: none;
     justify-content: center;
     flex-direction: row;
-    border-bottom: solid gainsboro;
+    border-bottom: solid black;
+    border-width: 1px;
 }
 
 .link-tabs{
     color: #222222;
     text-decoration: none;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px;
     padding-left: 12px;
-    padding-right: 16px;
+    padding-right: 16px; */
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 13px;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    margin-left: 21px;
+    margin-right: 21px;
 }

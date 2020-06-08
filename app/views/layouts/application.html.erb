@@ -8,7 +8,11 @@
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
   </head>
-
+  <script type="text/javascript">
+    window.bitsyLogo = "<%= image_url('bitsy_pixel_logo.png') %>";
+    window.cart = "<%= image_url('cart.png') %>";
+    window.magIcon = "<%= image_url('mag_icon.png') %>";
+  </script>
   <body>
     <%= yield %>
   </body>

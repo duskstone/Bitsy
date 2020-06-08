@@ -9,13 +9,16 @@ import Catergories from "./catergories/catergories";
 import MainContentContainer from "./maincontent/main-content";
 import FooterContent from "./footercontent/footer-content";
 import { Link } from 'react-router-dom';
+import Modal from './modal/modal';
+
 const App = () => (
     <div>
+        <Modal />
         <div className="event-header">
             <Link to="event=shop">Discover handcrafted and vintage pixel creations from GameDev-owned shops on Bitsy</Link>
         </div>
         <header className="main-app-header">
-            <h1 className="header-logo">Bitsy :3</h1>
+            <img className="bitsy-logo" src={window.bitsyLogo} alt="logo"/>
             <SearchBarContainer />
             <NavBarContainer />
         </header>
@@ -29,8 +32,8 @@ const App = () => (
             <FooterContent />
         </div>
         
-        <AuthRoute path="/login" component={LoginFormContainer} />
-        <AuthRoute path="/signup" component={SignupFormContainer} />
+        {/* <AuthRoute path="/login" component={LoginFormContainer} />
+        <AuthRoute path="/signup" component={SignupFormContainer} /> */}
     </div>
 );
 

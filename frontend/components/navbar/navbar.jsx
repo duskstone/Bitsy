@@ -1,17 +1,38 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { cartIcon } from "../../../app/assets/images//icons"
 
-const NavBar = ({ currentUser, logout }) => {
+const NavBar = ({ currentUser, logout, openModal }) => {
     const sessionLinks = () => (
-        <nav className="login-signup">
-            <Link to="/login">Sign in</Link>
-        </nav>
+        <div className="right-nav-items">
+            <nav className="login-signup">
+                <button className="sign-in-button" onClick={() => openModal('login')}>Sign in</button>
+            </nav>
+            <button className="cart-button">
+                <span className="cart-button-span">
+                    <div className="cart-icon">
+                        { cartIcon }
+                    </div>
+                </span>
+            </button>   
+        </div>
+        
     );
     const personalGreeting = () => (
-        <hgroup className="header-group">
-            <h2 className="header-name">Hiya, {currentUser.email}</h2>
-            <button className="header-button" onClick={logout}>Log Out</button>
-        </hgroup>
+        <div className="right-nav-items">
+            {/* <h2 className="header-name">Hiya, {currentUser.email}</h2> */}
+            <nav className="login-signup">
+                <button className="logout-button" onClick={logout}>Log Out</button>
+            </nav>
+            
+            <button className="cart-button">
+                <span className="cart-button-span">
+                    <div className="cart-icon">
+                        {cartIcon}
+                    </div>
+                </span>
+            </button>   
+        </div>
     );
 
     return currentUser ? personalGreeting() : sessionLinks();

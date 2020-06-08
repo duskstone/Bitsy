@@ -3,9 +3,19 @@
     justify-content: center;
     color: ghostwhite;
     text-decoration: none;
-    background-color: rgb(60, 3, 100);
-    height: 50px;
+    background-color: black;
+    height: 39px;
     align-items: center;
+    font-size: 14px;
+    line-height: 16px;
+    
+}
+
+.bitsy-logo{
+    width: 100px;
+    margin-right: 20px;
+    margin-top: 13px;
+    cursor: pointer;
 }
 
 .event-header > a{
@@ -22,20 +32,151 @@
 }
 
 .search-bar-div{
-    padding-right: 600px;
+    display: flex;
+    flex-direction: row;
+    /* padding-right: 600px; */
     padding-top: 10px;
 }
 
-.search-bar {
+.mid-nav-items {
+    display: inherit;
+}
+
+/* .search-bar {
     background-color: rgb(241, 239, 239);
     border-color: lightgray;
     border-radius: 25px;
     width: 300%;
     height: 70%;
     padding-right: 100px;
+} */
+
+.search-bar{
+    padding-left: 18px;
+    border-top-left-radius: 96px;
+    border-bottom-left-radius: 96px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0;
+    /* box-shadow: none;
+    background: transparent;
+    flex: 1; */
+    outline: none;
+    width: 1000px;
+    font-size: 15px;
+    border-style: solid;
+    background-color: #efefef;
+    border-color: gainsboro;
+    height: 40px;
+}
+
+.mag-button{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 10px;
+    border-style: solid;
+    border-bottom-right-radius: 96px;
+    border-top-right-radius: 96px;
+    outline: none;
+    border-left: none;
+    border-color: gainsboro;
+    height: 46px;
+    cursor: pointer;
+}
+
+.mag-button:hover{
+    background-color: gainsboro;
+}
+
+.mag-span{
+    display: inline-block;
+    fill: currentColor;
+    height: 24px;
+    vertical-align: middle;
+    width: 24px;
+    border-color: gainsboro;
+}
+
+.search-bar-mag-icon{
+    width: 20px;
 }
 
 .login-signup{
-    margin-left: 70px;
-    margin-top: 28px
+    /* margin-left: 70px; */
+    margin-top: 15px;
+    font-weight: 600;
+    text-decoration: none;
 }
+
+.right-nav-items{
+    display: inherit;
+}
+
+.login-signup > a{
+    text-decoration: none;
+}
+
+.cart-test{
+    width: 24px;
+    height: 24px;
+}
+
+.cart-button{
+    border-style: none;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 14px;
+    cursor: pointer;
+}
+
+.cart-button:hover{
+    background-color: gainsboro;
+}
+
+.mag-icon{
+    width: 20px;
+    height: 24px;
+    margin-top: 9px;
+}
+
+.sign-in-button{
+    background-color: white;
+    border-style: none;
+    font-weight: bold;
+    margin-left: 25px;
+    transition-duration: 0.4s;
+    height: 40px;
+    width: 70px;
+    border-radius: 18px;
+    cursor: pointer;
+    outline-style: none;
+}
+
+.logout-button{
+    background-color: white;
+    border-style: none;
+    font-weight: bold;
+    margin-left: 25px;
+    transition-duration: 0.4s;
+    height: 40px;
+    width: 70px;
+    border-radius: 18px;
+    cursor: pointer;
+    outline-style: none;
+}
+
+.logout-button:hover{
+    background-color: gainsboro;
+}
+
+.sign-in-button:hover{
+    background-color:gainsboro;
+}
+
+/* config.cache_classes = true
+config.serve_static_assets = true
+config.assets.compile = true
+config.assets.digest = true */
