@@ -1,0 +1,49 @@
+.sign-up-form{
+   background-color: white;
+   height: 620px;
+   width: 480px;
+   border-radius: 3px;
+}
+
+.top-header-sents{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+}
+
+.sign-up-form-title{
+    font-size: xx-large;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.top-header-bottom-sent{
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.session-submit-contain-signup{
+    margin-top: 24px;
+}
+
+.first-name-input{
+    margin-left: 20px;
+}
+
+.first-name-input-mini{
+    width: 432px;
+    margin-top: 10px;
+}
+
+.session-submit-register{
+   margin-left: 20px;
+}
+
+.sign-up-pass-input {
+    margin-top: 10px;
+}
+
+.sign-up-email-input {
+    margin-top: 10px;
+}

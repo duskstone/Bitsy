@@ -7,6 +7,7 @@ class SessionForm extends React.Component {
         this.state = {
             email: "",
             password: "",
+            firstName: ""
         };
         this.handleSubmit = this.handleSubmit.bind(this);
         // this.handleClick = this.handleClick.bind(this);
@@ -62,7 +63,6 @@ class SessionForm extends React.Component {
                    </div> 
                    
           <br />
-         {/* Pwease {this.props.formType} or {this.props.navLink} */}
                     {this.renderErrors()}
                     <div className="login-form">
                         <br />
@@ -85,12 +85,8 @@ class SessionForm extends React.Component {
                                 />
                             </div>
                         </div>
-                        <div className="sign-options">
-                                <li className="stay-signed-in">Stay Signed in</li>
-                                <li className="forgot-pass">Forgot you password?</li>
-                        </div>
                         <br />
-                        <div className="session-submit-contain">
+                        <div className="session-submit-contain session-submit-contain-login">
                             <input className="session-submit" type="submit" value="Sign in" />
                         </div>
                         <div className="or-section">
@@ -104,14 +100,61 @@ class SessionForm extends React.Component {
                     </div>
                     <div className="bottom-login-form-box">
                     <br />
-                        <button type="button" className="demo-button" onClick={this.loginDemoUser}>Demo User</button>
+                        <button type="button" className="demo-button" onClick={() => this.loginDemoUser()}>Demo User</button>
                     </div>
                 </form>
             </div>
         );
 
         const registerModal = () => (
-            <h1>I work </h1>
+            <div className="sign-up-form-container">
+                <form onSubmit={this.handleSubmit} className="sign-up-form">
+                    <div className="top-header-sents">
+                        <h1 className="sign-up-form-title">Create your account</h1>
+                        <h2 className="top-header-bottom-sent">Registration is easy.</h2>
+                    </div>
+                    <br />
+                    {this.renderErrors()}
+                    <div className="sign-up-form-inputs-container">
+                        <label className="label-title">Email address</label>
+                        <div className="email-input">
+                            <input type="text"
+                                value={this.state.email}
+                                onChange={this.update('email')}
+                                className="login-input sign-up-email-input"
+                            />
+                        </div>
+                        <br />
+                        <label className="label-title">First name</label>
+                        <div className="first-name-input sign-up-first-input">
+                            <input type="text"
+                                value={this.state.firstName}
+                                onChange={this.update('firstName')}
+                                className="login-input first-name-input-mini"
+                            />
+                        </div>
+                        <br />
+                        <label className="label-title">Password</label>
+                        <div className="password-input">
+                            <input type="password"
+                                value={this.state.password}
+                                onChange={this.update('password')}
+                                className="login-input sign-up-pass-input"
+                            />
+                        </div>
+                    </div>
+                    <div className="session-submit-contain-signup">
+                        <input className="session-submit session-submit-register" type="submit" value="Register" />
+                    </div>
+                    <div className="or-section">
+                        <hr className="hr-line" />
+                    </div>
+                    <div className="bottom-login-form-box">
+                        <br />
+                        <button type="button" className="demo-button" onClick={() => this.props.openModal('login')}>Sign in</button>
+                    </div>
+                </form>
+            </div>
         );
 
         return this.props.formType === 'sign in' ? signInModal() : registerModal(); 

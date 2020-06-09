@@ -10,4 +10,10 @@ class Api::ProductsController < ApplicationController
     def show
 
     end
+
+    private 
+
+    def products_params
+        params.require(:params).permit(:)
+    end
 end

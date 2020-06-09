@@ -49,7 +49,7 @@
  .login-form-box{
    background-color: white;
    height: 620px;
-   width: 150%;
+   width: 480px;
    border-radius: 3px;
  }
 
@@ -59,7 +59,7 @@
  }
 
  .label-title{
-  margin-left: 13px;
+  margin-left: 20px;
   font-weight: 700;
   margin-bottom: 10px;
  }
@@ -106,6 +106,10 @@
   justify-content: center;
  }
 
+ .session-submit-contain-login{
+   margin-top: 50px;
+ }
+
  .session-submit{
   background-color: black;
   width: 91%;
@@ -122,26 +126,6 @@
    background-color:#3c3c3c;
  }
 
- /* .left-bar{
-  width: 50px;
-  border-bottom: none;
-  border-bottom-style: solid;
-  margin-bottom: 7px;
- }
-
- .or-word{
-  color: gray;
-  padding-right: 10px;
-  padding-left: 10px;
- }
-
- .right-bar{
-  width: 50px;
-  border-bottom: none;
-  border-bottom-style: solid;
-  margin-bottom: 7px;
- } */
-
  .bottom-login-form-box{
   height: 25%;
   display: flex;
@@ -156,15 +140,15 @@
  .demo-button{
   height: 50px;
   width: 90%;
-  background-color: orange;
+  background-color: coral;
   border-style: solid;
   font-size: 20px;
   font-weight: 900;
   border-radius: 4px;
-  border-color: orange;
+  border-color: coral;
  }
 
  .demo-button:hover{
   cursor: pointer;
-  background-color: rgba(248, 161, 0, 0.787);
+  background-color: rgb(236, 152, 122);
  }
