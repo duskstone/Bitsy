@@ -11,7 +11,9 @@ class SessionForm extends React.Component {
         };
         this.handleSubmit = this.handleSubmit.bind(this);
         // this.handleClick = this.handleClick.bind(this);
-        this.loginDemoUser = this.loginDemoUser.bind(this);
+        this.demoUser = this.demoUser.bind(this);
+        this.testModal = this.testModal.bind(this);
+        this.test2Modal = this.test2Modal.bind(this);
     }
 
     update(field) {
@@ -27,30 +29,39 @@ class SessionForm extends React.Component {
             // .then( () => dispatch(this.props.closeModal()))
     }
 
-    // handleClick(f) {
-    //     f.preventDefault();
-    //     const modal = "signup";
-    //     this.props.otherForm(modal);
-    // }
-
-    loginDemoUser() {
-        const demoUser = this.setState({
+    demoUser(e) {
+        e.preventDefault;
+        const demoUser = {
             email: "jon@gmail.com",
             password: "123456"
-        })
-
-        this.handleSubmit(demoUser)
+        }
+        this.props.processForm(demoUser).then(this.props.closeModal);
     }
+
+    componentDidMount(){
+        this.props.clearErrors();
+    }
+
     renderErrors(){
         return(
             <ul>
                 {this.props.errors.map((error, i) => (
-                    <li key={`error-${i}`}>
+                    <li className="error-notifications" key={`error-${i}`}>
                         {error}
                     </li>
                 ))}
             </ul>
         );
+    }
+
+    testModal(){
+        this.props.openModal('signup');
+        this.props.clearErrors();
+    }
+
+    test2Modal(){
+        this.props.openModal('login');
+        this.props.clearErrors();
     }
 
     render() {
@@ -59,7 +70,7 @@ class SessionForm extends React.Component {
                 <form onSubmit={this.handleSubmit} className="login-form-box">
                    <div className="login-form-header">
                        <h1 className="sign-in-header">Sign in</h1>
-                        <button type="button" className="register-button" onClick={ () => this.props.openModal('signup')}>Register</button>
+                        <button type="button" className="register-button" onClick={this.testModal}>Register</button>
                    </div> 
                    
           <br />
@@ -100,7 +111,7 @@ class SessionForm extends React.Component {
                     </div>
                     <div className="bottom-login-form-box">
                     <br />
-                        <button type="button" className="demo-button" onClick={() => this.loginDemoUser()}>Demo User</button>
+                        <button type="button" className="demo-button" onClick={this.demoUser}>Demo User</button>
                     </div>
                 </form>
             </div>
@@ -151,7 +162,7 @@ class SessionForm extends React.Component {
                     </div>
                     <div className="bottom-login-form-box">
                         <br />
-                        <button type="button" className="demo-button" onClick={() => this.props.openModal('login')}>Sign in</button>
+                        <button type="button" className="demo-button" onClick={this.test2Modal}>Sign in</button>
                     </div>
                 </form>
             </div>

@@ -22,7 +22,7 @@
 
  .sign-in-header{
    padding-right: 60px;
-   margin-left: 10px;
+   margin-left: 20px;
    font-size: 40px;
    margin-top: 20px;
    font-weight: 900;
@@ -151,4 +151,9 @@
  .demo-button:hover{
   cursor: pointer;
   background-color: rgb(236, 152, 122);
+ }
+
+ .error-notifications{
+   margin-left: 20px;
+   color: red;
  }

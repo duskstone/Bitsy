@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { signup } from '../../actions/sessions_actions';
+import { signup, clearErrors } from '../../actions/sessions_actions';
 import SessionForm from './session_form';
 import { openModal } from '../../actions/modal_actions';
 
@@ -24,6 +24,7 @@ const mDTP = dispatch => {
             </button>
         ),
         openModal: modal => dispatch(openModal(modal)),
+        clearErrors: () => dispatch(clearErrors()),
     };
 };
 
