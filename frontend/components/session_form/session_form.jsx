@@ -42,6 +42,10 @@ class SessionForm extends React.Component {
         this.props.clearErrors();
     }
 
+    componentWillUnmount(){
+        this.props.clearErrors();
+    }
+
     renderErrors(){
         return(
             <ul>
@@ -56,12 +60,12 @@ class SessionForm extends React.Component {
 
     testModal(){
         this.props.openModal('signup');
-        this.props.clearErrors();
+    //     this.props.clearErrors();
     }
 
     test2Modal(){
         this.props.openModal('login');
-        this.props.clearErrors();
+        // this.props.clearErrors();
     }
 
     render() {

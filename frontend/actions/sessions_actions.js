@@ -47,4 +47,4 @@ export const signup = user => dispatch => {
     ))
 };
 
-export const clearErrors = () =>dispatch => dispatch(removeErrors());
+export const clearErrors = () => dispatch => dispatch(removeErrors());
