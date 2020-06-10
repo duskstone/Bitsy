@@ -1,39 +1,22 @@
 import React from 'react';
 
 class Products extends React.Component{
+    constructor(props){
+        super(props)
+    }
+    
     render() {
-       return ( <div className="popular-right-now">
-            <div className="pop-header">
-                <h2>Popular right now</h2>
+    debugger
+       return ( 
+        <div className="products-index-section">
+            <div className="products-index-header">
+                <h1>Popular right now</h1>
             </div>
-            <ul className="pop-item-lists">
-                <li>item 1</li>
-                <li>item 2</li>
-                <li>item tree</li>
-                <li>item 4</li>
-                <li>item fif</li>
-            </ul>
-            <ul className="pop-item-lists">
-                <li>item 1</li>
-                <li>item 2</li>
-                <li>item tree</li>
-                <li>item 4</li>
-                <li>item fif</li>
-            </ul>
-            <ul className="pop-item-lists">
-                <li>item 1</li>
-                <li>item 2</li>
-                <li>item tree</li>
-                <li>item 4</li>
-                <li>item fif</li>
-            </ul>
-            <ul className="pop-item-lists">
-                <li>item 1</li>
-                <li>item 2</li>
-                <li>item tree</li>
-                <li>item 4</li>
-                <li>item fif</li>
-            </ul>
+            {/* {this.props.products.forEach( product => (
+                <li className="splash-products">
+                    {product}
+                </li>
+            ))} */}
         </div>
        )}
 }

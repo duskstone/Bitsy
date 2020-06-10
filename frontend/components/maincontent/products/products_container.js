@@ -5,7 +5,7 @@ import Products from './products';
 
 const mSTP = ({ entities }) => {
     return {
-        products: entities,
+        products: entities.products,
     };
 };
 

@@ -19,7 +19,7 @@ class Api::ProductsController < ApplicationController
     end 
 
     def show
-        @Product = Product.find(params[:id])
+        @product = Product.find(params[:id])
     end
 
     def destroy
