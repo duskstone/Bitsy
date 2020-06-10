@@ -2,7 +2,6 @@ class Api::ProductsController < ApplicationController
     def create 
         @product = Product.new(products_params)
 
-        
         if product.save 
             render :show 
         else 
