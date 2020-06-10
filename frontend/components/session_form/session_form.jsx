@@ -60,12 +60,10 @@ class SessionForm extends React.Component {
 
     testModal(){
         this.props.openModal('signup');
-    //     this.props.clearErrors();
     }
 
     test2Modal(){
         this.props.openModal('login');
-        // this.props.clearErrors();
     }
 
     render() {
