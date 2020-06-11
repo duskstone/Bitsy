@@ -9,12 +9,7 @@ const mSTP = ({ entities }) => {
     };
 };
 
-// const mSTP = state =>{
-//     // debugger
-//     return {
-//         products: Object.values(state.entities.products)
-//     };
-// }
+
 const mDTP = dispatch => {
     return{
         getAllProducts: () => dispatch(getAllProducts()),

@@ -6,7 +6,6 @@ class SplashProduct extends React.Component{
     }
 
     componentDidMount(){
-        debugger
         this.props.getAllProducts();
         this.props.getProduct();
     }
@@ -14,10 +13,10 @@ class SplashProduct extends React.Component{
     render(){
         const product = this.props.product
         if (!product) {
-            debugger
+            
             return null
         }
-        debugger
+        
         return (
             <div className="splash-show-container">
                 {product.name}
