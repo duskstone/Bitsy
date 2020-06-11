@@ -5,10 +5,16 @@ import Products from './products';
 
 const mSTP = ({ entities }) => {
     return {
-        products: entities.products,
+        products: Object.values(entities.products)
     };
 };
 
+// const mSTP = state =>{
+//     // debugger
+//     return {
+//         products: Object.values(state.entities.products)
+//     };
+// }
 const mDTP = dispatch => {
     return{
         getAllProducts: () => dispatch(getAllProducts()),
