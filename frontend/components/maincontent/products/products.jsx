@@ -1,30 +1,32 @@
 import React from 'react';
+import SplashProductContainer from './splash_product_container';
+import { withRouter, Link } from 'react-router-dom';
 
 class Products extends React.Component {
     constructor(props){
         super(props)
         
-        // this.productsList = this.productsList.bind(this);
-
+        // this.handleClick = this.handleClick.bind(this)
     }
 
     componentDidMount(){
         this.props.getAllProducts();
     }
-    
-    // productsList(){
-    //     // debugger
-        
+
+    // handleClick(){
+    //     this.props.history.push("/products/:productId")
     // }
-    
+   
     render() {
-    // debugger
+        // onClick={() => this.props.history.push(`/products/${product.id}`)}
         const productList = this.props.products.map((product) => {
-            // debugger
             return (
-                    <li className="splash-boxes" key={product.id}>
+                    <li className="splash-boxes" key={product.id} >
+                        <Link to={`/products/${product.id}`}>
                         <img className="splash-product-images" src={product.imageUrl}/>
                         <h2 className="price-tag">${product.price}</h2>
+                        </Link>
+                        
                     </li>
                
             )
@@ -41,4 +43,4 @@ class Products extends React.Component {
        )}
 }
 
-export default Products;
+export default withRouter(Products);

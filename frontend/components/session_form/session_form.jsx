@@ -108,17 +108,14 @@ class SessionForm extends React.Component {
                         <div className="or-section">
                            <hr className="hr-line"/>
                         </div>
-                        {/* <div>
-                            <hr className="or-line"/>
-                            <span>OR</span>
-                        </div>
-                        */}
+                       
                     </div>
-                </form>
-                 <div className="bottom-login-form-box">
-                    <br />
+                     <div className="bottom-login-form-box">
+                         <br />
                         <button type="button" className="demo-button" onClick={this.demoUser}>Demo User</button>
-                </div>
+                        </div>
+                </form>
+                 
             </div>
         );
 
@@ -165,11 +162,12 @@ class SessionForm extends React.Component {
                     <div className="or-section">
                         <hr className="hr-line" />
                     </div>
-                </form>
-                <div className="bottom-login-form-box">
+                    <div className="bottom-login-form-box">
                         <br />
                         <button type="button" className="demo-button" onClick={this.test2Modal}>Sign in</button>
-                 </div>
+                    </div>
+                </form>
+                
             </div>
         );
 
