@@ -20,7 +20,9 @@ const App = () => (
             <Link to="event=shop">Discover handcrafted and vintage pixel creations from GameDev-owned shops on Bitsy</Link>
         </div>
         <header className="main-app-header">
+            <Link to="/">
             <img className="bitsy-logo" src={window.bitsyLogo} alt="logo"/>
+            </Link>
             <SearchBarContainer />
             <NavBarContainer />
         </header>
