@@ -15,7 +15,7 @@ const receiveProducts = (products) => ({
     products
 })
 
-const receiveErrors = () => ({
+const receiveErrors = (errors) => ({
     type: RECEIVE_PRODUCT_ERRORS,
     errors
 })

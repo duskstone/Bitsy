@@ -22,7 +22,7 @@ class Products extends React.Component {
         const productList = this.props.products.map((product) => {
             return (
                     <li className="splash-boxes" key={product.id} >
-                        <Link to={`/products/${product.id}`}>
+                        <Link className="splash-links" to={`/products/${product.id}`}>
                         <img className="splash-product-images" src={product.imageUrl}/>
                         <h2 className="price-tag">${product.price}</h2>
                         </Link>

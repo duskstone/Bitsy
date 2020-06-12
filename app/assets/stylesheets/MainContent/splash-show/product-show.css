@@ -1,0 +1,147 @@
+.big-show-page-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.show-page-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 1300px;
+}
+
+.splash-show-container{
+    width: 578px;
+    height: 578px;
+    margin-top: 30px;
+}
+
+.store-name{
+    font-size: larger
+}
+
+.sales-star-combo{
+    display: flex;
+    flex-direction: row;
+}
+
+.star-row{
+    margin-left: 15px;
+}
+
+.sales-star-combo{
+    margin-top: 5px;
+}
+
+.show-product-title{
+    margin-top: 20px
+}
+
+.show-product-price{
+    font-size: x-large;
+    font-weight: 900;
+}
+
+
+
+.check-mark-icon{
+    width: 18px;
+    margin-right: 4px;
+}
+
+.in-stock-sent{
+    font-size: smaller;
+    margin-top: 4px;
+}
+
+.show-page-details{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.show-page-details{
+    margin-top: 30px;
+    margin-left: 200px;
+}
+
+.show-product-title{
+    font-size: xx-large
+}
+
+.price-checkmark-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 420px
+}
+
+.check-mark-stock-pair{
+    display: flex;
+    
+}
+
+.add-to-cart-button{
+    width: 420px;
+    height: 45px;
+    border-radius: 25px;
+    color: white;
+    font-size: inherit;
+    background-color: black;
+    border-style: none;
+    outline-style: none;
+    font-weight: 900;
+    margin-top: 50px;
+}
+
+.add-to-cart-button:hover{
+    cursor: pointer;
+    background-color:#3c3c3c;
+}
+
+.handmade-pair{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.handmade-sent{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.star-icon{
+    width: 12px;
+    height: 12px;
+}
+
+.material-title{
+    margin-top: 20px;
+}
+
+.material-type{
+    font-size: xx-large;
+    margin-top: 10px;
+}
+
+.dimensions-title{
+    margin-top: 20px;
+}
+
+.dimensions-measures{
+    font-size: xx-large;
+    margin-top: 10px
+}
+
+.description-title{
+    margin-top: 20px;
+}
+
+.text-description{
+    font-size: x-large;
+    margin-top: 10px;
+    width: 420px;
+}

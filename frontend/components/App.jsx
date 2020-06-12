@@ -33,6 +33,9 @@ const App = () => (
         </Switch>
         {/* <AuthRoute path="/login" component={LoginFormContainer} />
         <AuthRoute path="/signup" component={SignupFormContainer} /> */}
+        <div className="footer-container">
+            <FooterContent />
+        </div>
 
     </div>
 );

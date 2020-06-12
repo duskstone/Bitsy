@@ -9,7 +9,7 @@ class MainContent extends React.Component {
        return ( <div className="main-content">
             <EverydayFinds />
             <ProductsContainer />
-            {/* <BitsyStory /> */}
+            <BitsyStory />
         </div> )
     }
 }

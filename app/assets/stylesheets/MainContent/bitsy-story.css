@@ -1,21 +1,71 @@
 .story-section{
-    background-color: rgb(243, 189, 89);
+    height: 600px;
+    background-image: url(https://i.imgur.com/ntxsvmh.gif);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.story-body{
+    display: flex;
+    width: 1290px;
+    height: 530px;
+    color: snow;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .story-header{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+}
+
+.story-header-pair{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 72px;
 }
 
 .story-link{
     display: flex;
     justify-content: center;
+    margin-top: 15px;
+    margin-left: 40px;
+}
+
+.story-title{
+    align-self: center;
+    font-size: xxx-large;
+    margin-left: 60px;
 }
 
 .three-quirps{
     list-style: none;
     display: flex;
     justify-content: space-between;
+}
+
+.quirp-titles{
+    text-align: center;
+    font-size: xx-large;
+    width: 370px;
+    height: 72px;
+    margin-left: 50px;
+    margin-top: 40px;
+    margin-right: 65px;
+}
+
+.quirp-body{
+    text-align: center;
+    width: 370px;
+    margin-left: 50px;
+    font-size: larger;
 }
 
 .help-center{

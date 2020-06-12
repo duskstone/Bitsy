@@ -31,4 +31,11 @@
     font-weight: 800;
     width: 45px;
     height: 17px;
+    font-size: larger;
+    margin-top: 1px;
+}
+
+.splash-links{
+    text-decoration: none;
+    color: black;
 }
