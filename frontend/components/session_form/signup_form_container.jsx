@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { signup, clearErrors } from '../../actions/sessions_actions';
 import SessionForm from './session_form';
-import { openModal } from '../../actions/modal_actions';
+import { openModal, closeModal } from '../../actions/modal_actions';
 
 
 
@@ -24,6 +24,7 @@ const mDTP = dispatch => {
             </button>
         ),
         openModal: modal => dispatch(openModal(modal)),
+        closeModal: modal => dispatch(closeModal(modal)),
         clearErrors: () => dispatch(clearErrors()),
     };
 };
