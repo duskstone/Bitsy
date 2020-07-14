@@ -1,5 +1,20 @@
 .footer-content {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    margin-right: 40px;
+}
+
+.footer-icons a {
+    fill: white;
+    margin: 4px;
+}
+
+.linkedin-icon {
+    margin-right: 6px;
 }

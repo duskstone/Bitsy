@@ -10,7 +10,6 @@ class SessionForm extends React.Component {
             firstName: ""
         };
         this.handleSubmit = this.handleSubmit.bind(this);
-        // this.handleClick = this.handleClick.bind(this);
         this.demoUser = this.demoUser.bind(this);
         this.testModal = this.testModal.bind(this);
         this.test2Modal = this.test2Modal.bind(this);
