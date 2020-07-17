@@ -6,11 +6,16 @@ import { starIcon } from "../../../../app/assets/images/icons"
 class SplashProduct extends React.Component{
     constructor(props){
         super(props)
+        this.myFunction = this.myFunction.bind(this)
     }
 
     componentDidMount(){
         this.props.getAllProducts();
         this.props.getProduct();
+    }
+
+    myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
     }
 
     render(){
@@ -47,6 +52,38 @@ class SplashProduct extends React.Component{
                                 <div className="check-mark-stock-pair">
                                     { checkMark2 }
                                     <h5 className="in-stock-sent">In stock</h5> 
+                                </div>
+                            </div>
+                            {/* <div className="quanity-dd-div">
+                               <button className="quanity-button">
+                                    Select Quantity
+                               </button> 
+                               <div className="quanity-list">
+                                   <a>1</a>
+                                   <a>2</a>
+                                   <a>3</a>
+                                   <a>4</a>
+                                   <a>5</a>
+                                   <a>6</a>
+                                   <a>7</a>
+                                   <a>8</a>
+                                   <a>9</a>
+                                   <a>10</a>
+                               </div> 
+                            </div>   */}
+                            <div className="dropdown">
+                                <button onClick={this.myFunction} className="dropbtn">Select Quantity</button>
+                                <div id="myDropdown" className="dropdown-content">
+                                    <a>1</a>
+                                    <a>2</a>
+                                    <a>3</a>
+                                    <a>4</a>
+                                    <a>5</a>
+                                    <a>6</a>
+                                    <a>7</a>
+                                    <a>8</a>
+                                    <a>9</a>
+                                    <a>10</a>
                                 </div>
                             </div>
                             <div>
